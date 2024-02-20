@@ -7,24 +7,19 @@
 
 TEST_CASE("Ex1 ", "[example]")
 {
-	struct Node *head, *tmp;
-	int length;
+	Student student[N];
 
-	head = makeNumbers(10);
-	struct Node *ptr = head;
+	makeStudent(student);
+	printStudent(student);
 
-	length = getLength(head);
-	cout << "The length of the list " << length << endl;
-	REQUIRE(length == 10);
-	printNumbers(head);
-	head = sortNumbers(head);
-	printNumbers(head);
-	tmp = head;
-	for (int i = 0; i < length - 1; i++)
-	{
-		REQUIRE(tmp->value <= tmp->next->value);
-		tmp = tmp->next;
-	}
+	REQUIRE(student[0].id == 10001);
+	REQUIRE(student[1].id == 10002);
+	REQUIRE(student[2].id == 10003);
+	REQUIRE(student[3].id == 10004);
+	REQUIRE(student[4].id == 10005);
+	REQUIRE(student[4].name == "Mateo");
+	REQUIRE(student[4].major == "Geometry");
+
 	cout << "--------------------------------------------------\n";
 	cout << "--------------------------------------------------\n";
 }

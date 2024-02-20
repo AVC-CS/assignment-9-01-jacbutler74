@@ -1,53 +1,29 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 using namespace std;
-struct Node
+
+const int N = 5;
+struct Student
 {
-    double value;
-    struct Node *next;
+    int id;
+    string name;
+    string major;
 };
 
-struct Node *makeNumbers(int N);
-void printNumbers(struct Node *head);
-int getLength(struct Node *head);
-struct Node *sortNumbers(struct Node *head);
-struct Node *swapNode(struct Node *prev, struct Node *ptr);
+void makeStudent();
+void printStudent(Student *head);
 
-struct Node *makeNumbers(int N)
+void makeStudent(Student *student)
 {
     /*******************************
      * Code your program here
      *******************************/
 }
-void printNumbers(struct Node *head)
+void printStudent(Student *student)
 {
-    struct Node *ptr = head;
-    while (ptr != NULL)
-    {
-        cout << ptr->value << "\t";
-        ptr = ptr->next;
-    }
     cout << endl;
-    /*******************************
-     * Code your program here
-     *******************************/
-}
-int getLength(struct Node *head)
-{
-    /*******************************
-     * Code your program here
-     *******************************/
-}
-struct Node *sortNumbers(struct Node *head)
-{
-    /*******************************
-     * Code your program here
-     *******************************/
-}
-
-struct Node *swapNode(struct Node *prev, struct Node *ptr)
-{
     /*******************************
      * Code your program here
      *******************************/
