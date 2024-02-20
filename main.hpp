@@ -12,7 +12,7 @@ struct Student
     string major;
 };
 
-void makeStudent();
+void makeStudent(Student *student);
 void printStudent(Student *head);
 
 void makeStudent(Student *student)
