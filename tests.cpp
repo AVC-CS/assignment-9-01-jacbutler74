@@ -17,8 +17,8 @@ TEST_CASE("Ex1 ", "[example]")
 	REQUIRE(student[2].id == 10003);
 	REQUIRE(student[3].id == 10004);
 	REQUIRE(student[4].id == 10005);
-	REQUIRE(student[4].name == "Mateo");
-	REQUIRE(student[4].major == "Geometry");
+	REQUIRE(student[4].name == "July");
+	REQUIRE(student[4].major == "Computer");
 
 	cout << "--------------------------------------------------\n";
 	cout << "--------------------------------------------------\n";
